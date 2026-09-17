@@ -1,0 +1,124 @@
+{
+  "info": {
+    "_postman_id": "5397373f-3f80-4687-907f-41a22228a79b",
+    "name": "Centro Distribucion",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27757869",
+    "_collection_link": "https://go.postman.co/collection/27757869-5397373f-3f80-4687-907f-41a22228a79b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GeoCoding",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://maps.googleapis.com/maps/api/geocode/json?address=Av. Morán Valverde y Rumichaca, Quito, Ecuador&key={{google_api_key_0jag}}",
+          "protocol": "https",
+          "host": [
+            "maps",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "maps",
+            "api",
+            "geocode",
+            "json"
+          ],
+          "query": [
+            {
+              "key": "address",
+              "value": "Av. Morán Valverde y Rumichaca, Quito, Ecuador"
+            },
+            {
+              "key": "key",
+              "value": "{{google_api_key_0jag}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "OrquestacionyCosto",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://maps.googleapis.com/maps/api/distancematrix/json?origins=-0.2807055, -78.54897649999999&destinations=Francisco Suarez %26 Baños, Quito, Ecuador&mode=walking&key={{google_api_key_0jag}}",
+          "protocol": "https",
+          "host": [
+            "maps",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "maps",
+            "api",
+            "distancematrix",
+            "json"
+          ],
+          "query": [
+            {
+              "key": "origins",
+              "value": "-0.2807055, -78.54897649999999"
+            },
+            {
+              "key": "destinations",
+              "value": "Francisco Suarez %26 Baños, Quito, Ecuador"
+            },
+            {
+              "key": "mode",
+              "value": "walking"
+            },
+            {
+              "key": "key",
+              "value": "{{google_api_key_0jag}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetCodingZero",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://maps.googleapis.com/maps/api/geocode/json?address=Baños y Francisco&key={{google_api_key_0jag}}",
+          "protocol": "https",
+          "host": [
+            "maps",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "maps",
+            "api",
+            "geocode",
+            "json"
+          ],
+          "query": [
+            {
+              "key": "address",
+              "value": "Baños y Francisco"
+            },
+            {
+              "key": "key",
+              "value": "{{google_api_key_0jag}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "google_api_key_0jag",
+      "secret": true
+    }
+  ]
+}
