@@ -17,7 +17,6 @@ Como complemento, se implementó una página web (`map.html`) que consume la **M
 ```
 .
 ├── README.md
-├── Informe_Practica02_GoogleMaps_ChristianNaranjo.docx   # Informe completo de la práctica
 ├── map.html                                               # Mapa y Street View de El Panecillo (Maps Embed API)
 └── evidencias/                                            # Capturas de pantalla usadas como evidencia en el informe
     ├── 00_panecillo_mapa.png
